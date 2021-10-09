@@ -6,6 +6,7 @@ A Quasar Framework app
 ```bash
 npm install
 npm install -g @quasar/cli
+quasar upgrade -i
 npm install --save vuex@next
 ```
 
