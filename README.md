@@ -8,7 +8,6 @@ npm install
 npm install -g @vue/cli
 npm install -g @quasar/cli
 npm install -g vuex@next
-quasar upgrade -i
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
