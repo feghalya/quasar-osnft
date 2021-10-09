@@ -2,7 +2,7 @@ import { createStore } from 'vuex';
 
 export default createStore({
     state: {
-
+        
     },
     mutations: {
 
@@ -15,7 +15,7 @@ export default createStore({
 
     },
     modules:{
-        
+
     }
     
 })

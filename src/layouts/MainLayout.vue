@@ -34,6 +34,85 @@
           :key="link.title"
           v-bind="link"
         />
+
+        <q-item-label header>
+          Navigation
+        </q-item-label>
+
+        <q-item
+          to="/"
+          exact
+          clickable
+          v-ripple>
+          
+          <q-item-section avatar>
+            <q-icon name="home" />
+          </q-item-section>
+
+          <q-item-section>
+            Home
+          </q-item-section>
+        </q-item>
+
+        <q-item
+          to="/about"
+          exact
+          clickable
+          v-ripple>
+          <q-item-section avatar>
+            <q-icon name="description" />
+          </q-item-section>
+
+          <q-item-section>
+            About
+          </q-item-section>
+        </q-item>
+
+        <q-item
+          to="/team"
+          exact
+          clickable
+          v-ripple>
+
+          <q-item-section avatar>
+            <q-icon name="people" />
+          </q-item-section>
+
+          <q-item-section>
+            Team
+          </q-item-section>
+        </q-item>
+
+        <q-item
+          to="/weeklyUpdate"
+          exact
+          clickable
+          v-ripple>
+          
+          <q-item-section avatar>
+            <q-icon name="event_note" />
+          </q-item-section>
+
+          <q-item-section>
+            Weekly Update
+          </q-item-section>
+        </q-item>
+
+        <q-item
+          to="/roadmap"
+          exact
+          clickable
+          v-ripple>
+          
+          <q-item-section avatar>
+            <q-icon name="insights" />
+          </q-item-section>
+
+          <q-item-section>
+            Roadmap
+          </q-item-section>
+        </q-item>
+
       </q-list>
     </q-drawer>
 
@@ -55,15 +134,15 @@ const linksList = [
   },
   {
     title: 'Twitter',
-    caption: '@quasarframework',
+    caption: 'Coming soon',
     icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    link: 'https://twitter.com'
   },
   {
     title: 'Facebook',
-    caption: '@QuasarFramework',
+    caption: 'Coming soon',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    link: 'https://facebook.com'
   },
 ];
 
