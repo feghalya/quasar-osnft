@@ -5,9 +5,10 @@ A Quasar Framework app
 ## Install the dependencies
 ```bash
 npm install
+npm install -g @vue/cli
 npm install -g @quasar/cli
+npm install -g vuex@next
 quasar upgrade -i
-npm install --save vuex@next
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
