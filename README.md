@@ -6,7 +6,7 @@ A Quasar Framework app
 ```bash
 npm install
 npm install --save vuex@next
-npm install --save quasar-cli
+npm install -g @quasar/cli
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
