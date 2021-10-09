@@ -1,4 +1,4 @@
-# Quasar osNFT (quasar-osnft)
+# Quasar osNFT
 
 A Quasar Framework app
 
@@ -6,6 +6,7 @@ A Quasar Framework app
 ```bash
 npm install
 npm install --save vuex@next
+npm install --save quasar-cli
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
