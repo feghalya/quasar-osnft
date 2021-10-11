@@ -4,6 +4,7 @@ export default function () {
       [
         { date: '2021-10-08', title: 'Quasar prototype' },
         { date: '2021-10-09', title: 'Real Day 1' },
+        { date: '2021-10-01', title: 'Filling up pages' },
       ],
     'team':
       [
