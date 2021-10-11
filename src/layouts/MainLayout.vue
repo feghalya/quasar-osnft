@@ -13,7 +13,7 @@
         />
         </q-toolbar>
         <q-tabs>
-          <q-list class='row justify-center full-height full-width text-center' style='font-size: 150%; color: white;'>
+          <q-list class='row justify-center full-height full-width text-center white-font' style='font-size: 150%'>
             
             <q-item to="/" exact flat round dense> 
               <q-item-section >

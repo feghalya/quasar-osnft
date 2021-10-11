@@ -1,10 +1,10 @@
 <template>
   <q-page>
-    <div class='q-pa-md' style='color: white'>
+    <div class='q-pa-md white-font'>
       <h3 class='text-center'>About osNFT</h3>
-      <div class='row' style='font-size:115%'>
+      <div class='row bigger-font'>
         <div class='col-sm-8 offset-sm-2' style='padding-bottom:10px'>
-          <p class='text-weight-bold' style='font-size:135%'>Problem definition</p>
+          <p class='subsection-title'>Problem definition</p>
           <p class='text-justify'>
             Academic publishing primarily happens in closed-access journals and is the only system in
             which authors <b>lose all rights</b> to their creations. The current system is certainly not ideal, especially when contrasted with
@@ -39,7 +39,7 @@
         </div>
 
         <div class='col-sm-8 offset-sm-2'>
-          <p class='text-weight-bold' style='font-size:135%'>In depth</p>
+          <p class='subsection-title'>In depth</p>
           <p class='text-justify'>
             The current distribution of scientific knowledge to the world is based on a dual system: (1) Through private publishing groups
             that are in large part closed-access, and (2) with a patent-oriented system which is even more restrictive. We tend to believe
@@ -114,7 +114,7 @@
             copyright retention for the authors.
           </p>
           
-          <p class='text-weight-bold' style='font-size:135%'>Concrete Plan</p>
+          <p class='subsection-title'>Concrete Plan</p>
           <p>
             As fun and revolutionary as our ideas might be, we are strongly of the view that being effective with a focused plan is better
             than having a great idea that is unable to gain traction. We do not wish to wait for a decentralized peer-review publishing

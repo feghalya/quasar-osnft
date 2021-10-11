@@ -1,6 +1,6 @@
 <template>
   <q-page> 
-    <div class="q-pa-md">
+    <div class="q-pa-md white-font">
       <h5>Weekly Updates</h5>
       <q-list dense bordered padding separator class="rounded-borders">
         <q-item
