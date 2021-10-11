@@ -1,11 +1,15 @@
 <template>
-  <q-page> 
-    <h5>Roadmap</h5>
-  </q-page>
+  <div>
+
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+  export default {
+    
+  }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

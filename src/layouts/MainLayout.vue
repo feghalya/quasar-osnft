@@ -2,119 +2,52 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title>
-          Open Science NFT
+        <q-toolbar-title class='text-weight-bold'>
+          osNFT
         </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
 
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
         />
+        </q-toolbar>
+        <q-tabs>
+          <q-list class='row justify-center full-height full-width text-center' style='font-size: 150%; color: white;'>
+            
+            <q-item to="/" exact flat round dense> 
+              <q-item-section >
+                Home
+              </q-item-section>
+            </q-item>
 
-        <q-item-label header>
-          Navigation
-        </q-item-label>
+            <q-item to="/about" exact> 
+              <q-item-section>
+                About
+              </q-item-section>
+            </q-item>
 
-        <q-item
-          to="/"
-          exact
-          clickable
-          v-ripple>
-          
-          <q-item-section avatar>
-            <q-icon name="home" />
-          </q-item-section>
+            <q-item to="/roadmap" exact> 
+              <q-item-section>
+                Roadmap
+              </q-item-section>
+            </q-item>
 
-          <q-item-section>
-            Home
-          </q-item-section>
-        </q-item>
+            <q-item to="/weeklyUpdate" exact> 
+              <q-item-section>
+                Weekly Update
+              </q-item-section>
+            </q-item>
 
-        <q-item
-          to="/about"
-          exact
-          clickable
-          v-ripple>
-          <q-item-section avatar>
-            <q-icon name="description" />
-          </q-item-section>
+            <q-item to="/team" exact> 
+              <q-item-section>
+                Team
+              </q-item-section>
+            </q-item>
 
-          <q-item-section>
-            About
-          </q-item-section>
-        </q-item>
-
-        <q-item
-          to="/team"
-          exact
-          clickable
-          v-ripple>
-
-          <q-item-section avatar>
-            <q-icon name="people" />
-          </q-item-section>
-
-          <q-item-section>
-            Team
-          </q-item-section>
-        </q-item>
-
-        <q-item
-          to="/weeklyUpdate"
-          exact
-          clickable
-          v-ripple>
-          
-          <q-item-section avatar>
-            <q-icon name="event_note" />
-          </q-item-section>
-
-          <q-item-section>
-            Weekly Update
-          </q-item-section>
-        </q-item>
-
-        <q-item
-          to="/roadmap"
-          exact
-          clickable
-          v-ripple>
-          
-          <q-item-section avatar>
-            <q-icon name="insights" />
-          </q-item-section>
-
-          <q-item-section>
-            Roadmap
-          </q-item-section>
-        </q-item>
-
-      </q-list>
-    </q-drawer>
+          </q-list>
+        </q-tabs>
+    </q-header>
 
     <q-page-container>
       <router-view />
@@ -123,25 +56,26 @@
 </template>
 
 <script>
+
 import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
     title: 'Github',
     caption: 'github.com/quasar-osnft',
-    icon: 'code',
+    icon: 'fab fa-github',
     link: 'https://github.com/louisgendron26/quasar-osnft'
   },
   {
     title: 'Twitter',
     caption: 'Coming soon',
-    icon: 'rss_feed',
+    icon: 'fab fa-twitter',
     link: 'https://twitter.com'
   },
   {
     title: 'Facebook',
     caption: 'Coming soon',
-    icon: 'public',
+    icon: 'fab fa-facebook',
     link: 'https://facebook.com'
   },
 ];
@@ -152,19 +86,35 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    EssentialLink
+   EssentialLink,
   },
 
+  setup(){
+    return {
+      essentialLinks: linksList,
+    }
+  }
+  /*
   setup () {
     const leftDrawerOpen = ref(false)
 
     return {
       essentialLinks: linksList,
+
       leftDrawerOpen,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
     }
   }
+  */
 })
 </script>
+
+<style lang="sass">
+  .q-layout
+    background: linear-gradient(to bottom, #000428, #004e92)
+
+  .q-header
+    background: #00031a
+</style>
