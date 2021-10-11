@@ -106,5 +106,5 @@
 
 <style lang="sass">
 .q-card
-    background: linear-gradient(to top, #000428, #004e92)
+    background: linear-gradient(to bottom, #536976, #292e49)
 </style>

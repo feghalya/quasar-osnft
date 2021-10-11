@@ -88,33 +88,20 @@ export default defineComponent({
   components: {
    EssentialLink,
   },
-
   setup(){
     return {
       essentialLinks: linksList,
     }
   }
-  /*
-  setup () {
-    const leftDrawerOpen = ref(false)
 
-    return {
-      essentialLinks: linksList,
-
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-  */
 })
 </script>
 
 <style lang="sass">
   .q-layout
-    background: linear-gradient(to bottom, #000428, #004e92)
-
+    background: linear-gradient(to top, #536976, #292e49)
+  
+  
   .q-header
-    background: #00031a
+    background: #292e49
 </style>

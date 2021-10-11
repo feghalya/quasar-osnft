@@ -1,7 +1,7 @@
 <template>
   <q-page> 
     <div class="q-pa-md white-font">
-      <h5>Weekly Updates</h5>
+      <h3 class='text-center'>Weekly Updates</h3>
       <q-list dense bordered padding separator class="rounded-borders">
         <q-item
           v-ripple v-for="(update, index) in $store.state.nft_store.weekly_update"
@@ -11,6 +11,8 @@
             <q-item-label caption>{{ update.date }}</q-item-label>
           </q-item-section>
         </q-item>
+        <p>
+        </p>
       </q-list>
     </div>
   </q-page>

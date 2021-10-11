@@ -1,23 +1,54 @@
 <template>
   <q-page> 
-    <div class="q-pa-md col">
-      <h3 class='text-center' style='color: white;'>Our Team</h3>
-      <div class='items-start q-gutter-md'>
-        <q-card
-          v-for="(member, index) in $store.state.nft_store.team"
-          :key="`member=${index}`"
-          class="my-card">
-          <q-card-section>
-            <div class='text-h6'>{{ member.name }}</div>
-            <div class='text-subtitle'>{{ member.title }}</div>
-            <href round type="a" href="member.linkedin_url" target='_blank' label="Linkedin"></href>
-          </q-card-section>
+    <div class="q-pa-md col white-font">
+      <h3 class='text-center'>Our Team</h3>
+      <div class='row bigger-font'>
 
-          <q-card-section>
-            <div>{{ member.desc }}</div>
-          </q-card-section>
-        </q-card>
-      </div>
+        <div class='col-sm-8 offset-sm-2 q-gutter-md'>
+          <q-card
+            v-for="(member, index) in store.state.nft_store.team"
+            :key="`member=${index}`"
+            class="my-card">
+
+            <q-card-section>
+
+              <q-item >
+
+                <q-item-section
+                  class='white-font'
+                  style='font-size: 150%'
+                  side>
+                  {{ member.name }}
+                </q-item-section>
+
+
+                <q-item-section class='white-font'>
+                  <p style="margin-left: 20px; margin-bottom:0px"> {{ member.title }} </p>
+                </q-item-section>
+
+                <q-item-section side class='white-font'> 
+                  <q-icon
+                    class='linkedin-icon'
+                    size='md'
+                    name='fab fa-linkedin'
+                    clickable
+                    @click="openHref(member)">
+                  </q-icon>
+                </q-item-section>
+
+              </q-item>
+            </q-card-section>
+
+            <q-separator inset></q-separator>
+
+            <q-card-section>
+              <div>{{ member.desc }}</div>
+            </q-card-section>
+
+          </q-card>
+        </div>
+
+      </div> <!-- Row -->
     </div>
   </q-page>
 </template>
@@ -27,16 +58,20 @@
 import { useStore } from 'vuex'
 
 export default {
+  methods:{
+    openHref(item){
+      window.open(String(item.linkedin_url), '_blank');
+    }
+  },
   setup() {
-    const $store = useStore()
+    const store = useStore()
     return{
-      $store
+      store
     }
   }
 }
 </script>
-<style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 600px
+<style lang="sass">
+  .q-card
+    background: linear-gradient(to bottom, #536976, #292e49)
 </style>

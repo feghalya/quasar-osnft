@@ -41,8 +41,3 @@ export default defineComponent({
   name: 'PageIndex'
 })
 </script>
-
-<style lang="sass">
-  .q-page
-    background: linear-gradient(to bottom, #000428, #004e92)
-</style>
