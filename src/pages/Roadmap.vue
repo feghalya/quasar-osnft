@@ -1,7 +1,7 @@
 <template>
 <q-page>
   <div class='q-pa-md bigger-font white-font'>
-      <h3 class='text-center white-font'>Roadmap</h3>
+      <h3 class='text-center white-font'>Our ambitions laid out</h3>
 
       <q-card bordered class='roadmap-card'>
         <div class='roadmap-header'>
@@ -9,6 +9,7 @@
           <p>1 month</p>
         </div>
         <q-separator inset></q-separator>
+        <q-card-section>
           <ul>
             <li><p>
               Formally define the osNFT standard and its underlying legal component (Open-Source, CC-BY, etc.)
@@ -19,11 +20,9 @@
             </p></li>
             <li><p>
               Generate primitive osNFTs from PhD student's work (beautiful microscopy photos, sexy graphs, etc.) as a proof of
-              concept. Sciwalkart, one of the submitters of this proposal, would be more than happy to mint their artistic work as
-              osNFTs.
+              concept. Sciwalkart, our team member, will soon start minting their artistic work as osNFTs.
             </p></li>
           </ul>
-        <q-card-section>
         </q-card-section>
       </q-card>
 

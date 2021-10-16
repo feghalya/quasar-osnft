@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class='q-pa-md white-font'>
-      <h3 class='text-center'>About osNFT</h3>
+      <h3 class='text-center'>What are osNFTs ?</h3>
       <div class='row bigger-font'>
         <div class='col-sm-8 offset-sm-2' style='padding-bottom:10px'>
           <p class='subsection-title'>Problem definition</p>
@@ -58,8 +58,8 @@
             missing link that would make this possible. How cool would it have been if the first paper that coined the name 'CRISPR'
             (dx.doi.org/10.1046/j.1365-2958.2002.02839.x) was minted as an NFT ?
           </p>
-          <p class='text-weight-bold text-center'>
-            Manuscripts and other science collectibles can be minted into open science NFTs (osNFTs) and made available tosociety.
+          <p class='text-weight-bold text-justify'>
+            Manuscripts and other science collectibles can be minted into open science NFTs (osNFTs) and made available to society.
           </p>
           <p class='text-justify'> 
             In this model, a scientific document or image would be transformed into an osNFT, creating verifiable rights for these digital
@@ -103,16 +103,10 @@
                 views a year, would yield 1000$/year if the price for viewing it is only 1 cent. Sadly, with the current web2 publishing
                 standards, this model is not enforceable. However, with decentralized web3 open access journals that will inevitably
                 come into existence, "par-per-view" has the potential to revolutionize the way science is funded, leading to true
-                decentralization of research. We would love to address this point following the hopeful success of this proposal.
+                decentralization of research.
               </p>
             </li>
           </ul>
-
-          <p class='text-justify'>
-            With all that, we strongly believe that the Cardano ecosystem, coupled with the osNFT model, would be the ideal platform to
-            monetize digital content that is currently not being exploited by the scientific community, i.e., open access papers with
-            copyright retention for the authors.
-          </p>
           
           <p class='subsection-title'>Concrete Plan</p>
           <p>
@@ -139,7 +133,7 @@
               representation of their paper's conclusions.
             </p> </li>
 
-            <li> <p>Build a marketplace for osNFTs that is visually appealing to most people.</p> </li>
+            <li> <p>Building an attractive marketplace for osNFTs.</p> </li>
           </ol>
 
         </div>

@@ -1,7 +1,7 @@
 <template>
   <q-page> 
     <div class="q-pa-md white-font">
-      <h3 class='text-center'>Weekly Updates</h3>
+      <h3 class='text-center'>What have we been up to ?</h3>
       <div class='row bigger-font'>
         <div class='col-sm-8 offset-sm-2 q-gutter-md'>
         <q-list dense bordered padding separator

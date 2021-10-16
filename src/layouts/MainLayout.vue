@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title class='text-weight-bold'>
-          osNFT
+          osNFT Standard
         </q-toolbar-title>
 
         <EssentialLink
