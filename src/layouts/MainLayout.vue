@@ -62,9 +62,9 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Github',
-    caption: 'github.com/quasar-osnft',
+    caption: 'github.com/intellart',
     icon: 'fab fa-github',
-    link: 'https://github.com/louisgendron26/quasar-osnft'
+    link: 'https://github.com/intellart'
   },
   {
     title: 'Twitter',

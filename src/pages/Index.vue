@@ -24,6 +24,12 @@
 
         <div class='row'>
           <div class="col-sm-8 offset-sm-2 self-center text-center">
+            <p style="margin-top: 5px; font-size:150%">Arweave revolutionized the paradigm of data permanence.</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class="col-sm-8 offset-sm-2 self-center text-center">
             <p style="margin-top: 5px; font-size:150%"><i>The next evolution, we think, is an NFT-enabled free-circulation, traceability and marketization of intellectual property rights. And by extension, knowledge.</i></p>
           </div>
         </div>

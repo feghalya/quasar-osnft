@@ -1,8 +1,8 @@
 {
-  "name": "quasar-osnft",
+  "name": "Open Science NFT Project",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar osNFT",
+  "description": "A decentralised solution for open science access",
+  "productName": "osNFT",
   "author": "",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
-    "quasar": "^2.1.1",
+    "quasar": "^2.1.2",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

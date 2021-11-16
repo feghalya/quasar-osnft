@@ -137,9 +137,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `Quasar osNFT`,
-        short_name: `Quasar osNFT`,
-        description: `A Quasar Framework app`,
+        name: `Open Science NFT Project`,
+        short_name: `osNFT`,
+        description: `A decentralised solution for open science access`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
