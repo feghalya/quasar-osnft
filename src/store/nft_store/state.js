@@ -2,15 +2,15 @@ export default function () {
   return {
     'weekly_update' : 
       [
-        { date: '2021-10-15', title: "Website deployed!" },
-        { date: '2021-10-22', title: "Team page updated." },
-        { date: '2021-10-28', title: "Success in Cardano's Catalyst Fund6 proposal!" },
-        { date: '2021-11-05', title: "Official logo is out!" },
-        { date: '2021-11-12', title: "Completed tokenomics design." },
-        { date: '2021-11-18', title: "Presentation at Arweave's OWF5 Community Spotlight Event." },
-        { date: '2021-11-26', title: "Implemented NFT gallery view with blockweave integration." },
-        { date: '2021-12-03', title: "Meta NFT submodules: osNFT frameworks design started!" },
         { date: '2021-12-10', title: "Website updated with roadmap." },
+        { date: '2021-12-03', title: "Meta NFT submodules: osNFT frameworks design started!" },
+        { date: '2021-11-26', title: "Implemented NFT gallery view with blockweave integration." },
+        { date: '2021-11-18', title: "Presentation at Arweave's OWF5 Community Spotlight Event." },
+        { date: '2021-11-12', title: "Completed tokenomics design." },
+        { date: '2021-11-05', title: "Official logo is out!" },
+        { date: '2021-10-28', title: "Success in Cardano's Catalyst Fund6 proposal!" },
+        { date: '2021-10-22', title: "Team page updated." },
+        { date: '2021-10-15', title: "Website deployed!" }
       ],
     'team':
       [
