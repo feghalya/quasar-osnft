@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class='q-pa-md' style='color: white'>
-      <div class='flex flex-center'><h3 class='text-weight-bolder text-center'>Open Science NFT</h3></div>
+      <div class='flex flex-center'><h3 class='text-weight-bolder text-center'>Decentralizing Science</h3></div>
       <div class='column'>
 
         <div class='row'>

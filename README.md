@@ -1,6 +1,6 @@
-# Quasar osNFT
+# Intellart website
 
-A Quasar Framework app
+Built with Quasar and Vue.js 3
 
 ## Install the dependencies
 ```bash

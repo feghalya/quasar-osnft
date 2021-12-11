@@ -1,9 +1,18 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+
+  <q-layout view="lHh Lpr lFf" >
+
+    <q-header elevatedclass="bg-black text-grey-8 z-top">
       <q-toolbar>
+
+        <q-btn flat round dense icon="menu" @click="drawerLeft = !drawerLeft" />
+
+        <q-avatar>
+          <q-img src="icons/favicon-192x192.png" />
+        </q-avatar>
+
         <q-toolbar-title class='text-weight-bold'>
-          osNFT Standard
+           Decentralized Open Science
         </q-toolbar-title>
 
         <EssentialLink
@@ -11,49 +20,41 @@
           :key="link.title"
           v-bind="link"
         />
-        </q-toolbar>
-        <q-tabs>
-          <q-list class='row justify-center full-height full-width text-center white-font' style='font-size: 150%'>
-            
-            <q-item to="/" exact flat round dense> 
-              <q-item-section >
-                Home
-              </q-item-section>
-            </q-item>
 
-            <q-item to="/about" exact> 
-              <q-item-section>
-                About
-              </q-item-section>
-            </q-item>
-
-            <q-item to="/roadmap" exact> 
-              <q-item-section>
-                Roadmap
-              </q-item-section>
-            </q-item>
-
-            <q-item to="/weeklyUpdate" exact> 
-              <q-item-section>
-                Weekly Update
-              </q-item-section>
-            </q-item>
-
-            <q-item to="/team" exact> 
-              <q-item-section>
-                Team
-              </q-item-section>
-            </q-item>
-
-          </q-list>
-        </q-tabs>
+      </q-toolbar>
     </q-header>
+
+    <q-drawer
+      side="left"
+      v-model="drawerLeft"
+      :width="150"
+      :breakpoint="700"
+      behavior="desktop"
+    >
+      <q-scroll-area class="fit">
+
+        <q-tabs
+          vertical
+          :breakpoint="500"
+          class="text-white"
+        >
+          <q-route-tab name="Home" icon="home" label="Home" to="/" exact />
+          <q-route-tab name="About" icon="description" label="In depth" to="/about" exact />
+          <q-route-tab name="Roadmap" icon="list" label="Roadmap" to="/roadmap" exact />
+          <q-route-tab name="Weekly Updates" icon="done_outline" label="Weekly Update" to="/weeklyUpdate" exact />
+          <q-route-tab name="Team" icon="account_circle" label="About us" to="/team" exact />
+         </q-tabs>
+
+      </q-scroll-area>
+    </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+
   </q-layout>
 </template>
+
 
 <script>
 
@@ -61,46 +62,53 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
+    title: 'Twitter',
+    caption: 'twitter.com/opensciencenft',
+    icon: 'fab fa-twitter',
+    link: 'https://twitter.com/opensciencenft'
+  },
+  {
+    title: 'Facebook',
+    caption: 'discord.com/invite/F8WxKFrc',
+    icon: 'fab fa-discord',
+    link: 'https://discord.com/invite/F8WxKFrc'
+  },
+  {
     title: 'Github',
     caption: 'github.com/intellart',
     icon: 'fab fa-github',
     link: 'https://github.com/intellart'
-  },
-  {
-    title: 'Twitter',
-    caption: 'Coming soon',
-    icon: 'fab fa-twitter',
-    link: 'https://twitter.com'
-  },
-  {
-    title: 'Facebook',
-    caption: 'Coming soon',
-    icon: 'fab fa-facebook',
-    link: 'https://facebook.com'
-  },
+  }
 ];
 
 import { defineComponent, ref } from 'vue'
+import { useQuasar } from 'quasar'
 
 export default defineComponent({
   name: 'MainLayout',
 
   components: {
-   EssentialLink,
+   EssentialLink
   },
   setup(){
+    const $q = useQuasar()
+
     return {
       essentialLinks: linksList,
+      drawerLeft: ref($q.screen.width > 700)
     }
   }
 
 })
+
 </script>
 
 <style lang="sass">
+  .q-drawer
+    background: #292e49
+
   .q-layout
     background: linear-gradient(to top, #536976, #292e49)
-  
   
   .q-header
     background: #292e49
