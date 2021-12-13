@@ -22,6 +22,7 @@
                 </q-item-section>
 
                 <q-item-section
+                  v-if='memberName'
                   class='white-font'
                   side>
                   <p style="margin-bottom:0px; font-size: 150%"> {{ member.name }} </p>
@@ -64,6 +65,11 @@
 
               </q-item>
 
+            </q-card-section>
+
+            <q-card-section v-if='!memberName' class='white-font'>
+              <p style="margin-bottom:0px; font-size: 150%"> {{ member.name }} </p>
+              <p style="margin-bottom:0px; font-size: 100%"> {{ member.title }} </p>
             </q-card-section>
 
             <q-separator inset></q-separator>
@@ -100,6 +106,7 @@
                 </q-item-section>
 
                 <q-item-section
+                  v-if='memberName'
                   class='white-font'
                   side>
                   <p style="margin-bottom:0px; font-size: 150%"> {{ member.name }} </p>
@@ -144,6 +151,11 @@
 
             </q-card-section>
 
+            <q-card-section v-if='!memberName' class='white-font'>
+              <p style="margin-bottom:0px; font-size: 150%"> {{ member.name }} </p>
+              <p style="margin-bottom:0px; font-size: 100%"> {{ member.title }} </p>
+            </q-card-section>
+
             <q-separator inset></q-separator>
 
             <q-card-section>
@@ -161,18 +173,22 @@
 
 <script>
 
+import { ref } from 'vue'
 import { useStore } from 'vuex'
+import { useQuasar } from 'quasar'
 
 export default {
-  methods:{
+  methods: {
     openHref(url){
       window.open(String(url), '_blank');
     }
   },
   setup() {
     const store = useStore()
+    const q = useQuasar()
     return{
-      store
+      store,
+      memberName: ref(q.screen.width > 850)
     }
   }
 }

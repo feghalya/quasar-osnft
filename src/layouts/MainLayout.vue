@@ -11,8 +11,10 @@
           <q-img src="icons/favicon-192x192.png" />
         </q-avatar>
 
-        <q-toolbar-title class='text-weight-bold'>
+        <q-toolbar-title class='text-weight-bold' v-if="titleName">
            Decentralized Open Science
+        </q-toolbar-title>
+        <q-toolbar-title class='text-weight-bold' v-else>
         </q-toolbar-title>
 
         <EssentialLink
@@ -88,14 +90,15 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-   EssentialLink
+    EssentialLink
   },
   setup(){
     const $q = useQuasar()
 
     return {
       essentialLinks: linksList,
-      drawerLeft: ref($q.screen.width > 700)
+      drawerLeft: ref($q.screen.width > 700),
+      titleName: ref($q.screen.width > 850)
     }
   }
 
