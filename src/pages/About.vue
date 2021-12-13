@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class='q-pa-md white-font'>
-      <h3 class='text-center'>What are osNFTs ?</h3>
+      <h3 class='text-center'>What is our mission ?</h3>
       <div class='row bigger-font'>
         <div class='col-sm-8 offset-sm-2' style='padding-bottom:10px'>
           <p class='subsection-title'>Problem definition</p>
@@ -36,33 +36,35 @@
               <p>The public should have a right to transparent and easy access to the science they helped fund.</p>
             </li>
           </ul>
-        </div>
-
-        <div class='col-sm-8 offset-sm-2'>
-          <p class='subsection-title'>In depth</p>
           <p class='text-justify'>
             The current distribution of scientific knowledge to the world is based on a dual system: (1) Through private publishing groups
             that are in large part closed-access, and (2) with a patent-oriented system which is even more restrictive. We tend to believe
             that there is a better way.
-            <br/><br/>
+          </p>
+        </div>
+
+        <div class='col-sm-8 offset-sm-2'>
+          <p class='subsection-title'>Proposed solution</p>
+          <p class='text-justify'>
             Scientific results and documents are perceived by scientists as tools used to communicate new discoveries. However, they
             have an additional value for society. Compared to how a biography is a means for an individual to share their thoughts and
             experiences to the public, a scientific article is a tool scientists use to communicate with other scientists, almost exclusively,
             unfortunately due to the very nature of the medium itself. In fact, articles contain opinions, notably in the discussion section
-            of a paper. Thus, scientific knowledge has intrinsic value beyond its logical conclusions, meaning a manuscript can be conceptualized as a literary document (such as a novel, journal, opinion article or poetry) or even a piece of art (such as
+            of a paper. Thus, scientific knowledge has intrinsic value beyond its logical conclusions, meaning a manuscript can be conceptualized
+            as a literary document (such as a novel, journal, opinion article or poetry) or even a piece of art (such as
             photography, paintings) crafted to present results in the most honest and unbiased fashion. Like a vintage piece of literature
             or an art collectible, it could be acquired and traded.
             <br/><br/>
             Just as the first X-ray crystallography of DNA by Rosalind Franklin (https://i.stack.imgur.com/8XHZX.jpg) is viewed by many
             as a highly valued collectible, right now, digital content of this sort cannot enjoy the same properties. NFT technology is the
-            missing link that would make this possible. How cool would it have been if the first paper that coined the name 'CRISPR'
+            missing link that would make this possible. How fascinating would it have been if the first paper that coined the name 'CRISPR'
             (dx.doi.org/10.1046/j.1365-2958.2002.02839.x) was minted as an NFT ?
           </p>
           <p class='text-weight-bold text-justify'>
             Manuscripts and other science collectibles can be minted into open science NFTs (osNFTs) and made available to society.
           </p>
-          <p class='text-justify'> 
-            In this model, a scientific document or image would be transformed into an osNFT, creating verifiable rights for these digital
+          <p class='text-justify'>
+            In this model, a scientific document or image would be transformed into an NFT, creating verifiable rights for these digital
             assets. A system based on osNFTs would simultaneously retain the original author's copyright and make the asset a tradable
             product. Pre-set royalties would ensure perpetual revenue streams to the author/lab, where legal entities allow.
             <br/><br/>
@@ -75,68 +77,49 @@
             <br/><br/>
             What is needed is a <b>marketplace</b> to make all of this possible.
             <br/><br/>
-            We believe that value can be generated with "Pay-per-own" and "Pay-per-view" monetization strategies:
+            There will be at least 2 kinds of osNFTs:
           </p>
-          <ul class='text-justify'>
+          <ol class='text-justify'>
             <li>
               <p>
-                <b>Pay-per-own</b>: as a collectible, there is inherent value in a document that first reports a new method or discovery
+                <b>Non-monetizable osNFTs</b>: open-access scientific publications, especially those tied to an academic institution,
+                may not, at first, be a source of revenue for authors. However, they will still be mintable and tradable. This sounds paradoxical
+                at first, because why would anyone trade NFTs if they can't get anything in return? The answer is that money is not the only
+                value that can be extracted from such a system. In the academic world, a 'currency' could simply be the scientist or institution's reputation
+                and recognition by their peers. This means that osNFTs can become a way for researchers or labs to endorse and signal what they perceive to
+                be relevant science. Let's also not forget the 'ethos' of academic research a not-for-profit activity (when talking about individual labs
+                of course; universities, publishing companies and networking platforms are a different story).
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>Monetizable osNFTs</b>: as a collectible, there is inherent value in a document that first reports a new method or discovery
                 (historical, legal or religious documents have economic value as collectible items). An original scientific digital asset
                 can be owned by someone who either (1) sees value in this item and expects its value to grow or (2) wants to donate
                 to the field, and thus receive a 'stamp' which would effectively serve as a proof-of-donation. In the latter scenario, a
                 re-sell of the osNFT would not generate income for the buyer (person who donated the money), the money would go
-                instead to a treasury that would be used to fund additional research.
+                instead to a treasury that would be used to fund additional research. For authors, using their published academic article might not
+                always be an option due to IP laws, but there is no problem with monetizing derivatives of the work. For example, authors can create
+                graphical abstracts or summaries of their work, and mint them as osNFTs, which can be bought, traded, and profited from.
               </p>
             </li>
-
-            <li>
-              <p>
-                <b>Pay-per-view</b>: the current publication system requires authors to pay to publish and readers to pay exorbitant fees
-                to access the document ( tens of dollars for just one paper, or via subscription through universities, who pay fees so
-                high, that the journal often times prohibits the university from publicly declaring the amount paid in subscriptions,
-                money that very likely also comes from tax money and donations ). In the case of open-access publications, readers
-                can access the document for free, but the authors need to pay thousands of dollars to publish
-                (https://plos.org/publish/fees/). In both cases, someone is at a huge financial disadvantage. With the "pay-per-view"
-                strategy, for a very small price, anyone can get virtual access to the document, with the funds going to the author.
-                The fee would be counted in cents, so that the user is not impacted when, say, they access hundreds of papers, but
-                for the author, the sum of those small fees would add up to a substantial amount. A high-impact paper, with say 100k
-                views a year, would yield 1000$/year if the price for viewing it is only 1 cent. Sadly, with the current web2 publishing
-                standards, this model is not enforceable. However, with decentralized web3 open access journals that will inevitably
-                come into existence, "par-per-view" has the potential to revolutionize the way science is funded, leading to true
-                decentralization of research.
-              </p>
-            </li>
-          </ul>
-          
-          <p class='subsection-title'>Concrete Plan</p>
-          <p>
-            As fun and revolutionary as our ideas might be, we are strongly of the view that being effective with a focused plan is better
-            than having a great idea that is unable to gain traction. We do not wish to wait for a decentralized peer-review publishing
-            platform to exist before we can apply our monetization strategy (Pay-per-own and Par-per-view). Instead, we will pour all our
-            efforts in making the osNFT appeal to the public. This will give us our proof-of-concept that we will be able to build upon.
-            After all, bitcoin itself was developed as a proof-of-concept before worldwide consensus decided to make it a global
-            currency.
-            <br/><br/>
-            Increasing public interest in science is our first and foremost priority, we are aware that NFTs are a concept that can be very
-            abstract to people outside the crypto space. People can generally understand NFTs when applied to pictures, music, and
-            other traditional art. Applying it to a high-level concept, such as knowledge, in the sense that we refer to here, would need a
-            break-in period for most people to get a good grasp on its utility. For these reasons, will be focusing on 4 things:
-          </p>
-          
-          <ol>
-            <li> <p>Establishing a clear standard with visual examples of what an osNFT is.</p> </li>
-
-            <li> <p>Converting scientific content into art pieces while applying scientific rigour. </p> </li>
-
-            <li> <p>
-              Introducing open-access papers into the system, asking authors to create or assist in the creation of visual
-              representation of their paper's conclusions.
-            </p> </li>
-
-            <li> <p>Building an attractive marketplace for osNFTs.</p> </li>
           </ol>
-
+          <p class='text-justify'>
+            Additionally, monetizable osNFTs would also include the creation of frameworks for a modular generation of science-inspired NFTs.
+            This framework-centric marketplace can be thought of as a meta-NFT marketplace, or a marketplace for building frameworks for creating NFTs.
+          </p>
         </div>
+
+        <div class='col-sm-8 offset-sm-2'>
+          <p class='subsection-title'>Future outlook</p>
+          <p class='text-justify'>
+            With time, we can envision a community that will create these generative frameworks but also curate them to ensure scientific rigour. At
+            the initial stages of the project, curation will be performed by us, the founding team. Outsourcing to the community will be a gradual process
+            that will co-evolve with a DAO (Decentralized Autonomous Organization).
+          </p>
+        </div>
+
       </div>
     </div>
   </q-page>
